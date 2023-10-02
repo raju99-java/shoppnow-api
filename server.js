@@ -19,7 +19,7 @@ app.use(cors({
 
 const io = socket(server, {
     cors: {
-        origin: ['https://test-shoppnow.vercel.app', 'https://shoppnow-dashboard.vercel.app'],
+        origin: '*',
         credentials: true
     }
 })
